@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Logic
+  - wings
+  - settingsUi
+  - options
   layers:
   - Default
   - TransparentFX

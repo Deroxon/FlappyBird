@@ -10,6 +10,13 @@ public class LogicScript : MonoBehaviour
     public int playerScore;
     public Text scoreText;
     public GameObject gameOverScreen;
+    public AudioSource audioSource;
+
+    public void Start()
+    {
+        audioSource.volume = StaticNameController.globalVolume;
+    }
+
 
     [ContextMenu("increase score")]
     public void addScore(int scoreToAdd)
@@ -29,6 +36,11 @@ public class LogicScript : MonoBehaviour
     }
 
 
-    // tasks: Animations and bird wings bird go off the screen game over || sound effect || spawn clouds || maybe bonus speed after come 10 points || high score || make menu || 2 game modes like shooting the bird with eggs to open pipes or spawning collision enemys 
+
+
+    // tasks: bird go off the screen game over || sound effect || spawn clouds || maybe bonus speed after come 10 points || high score || make menu || 2 game modes like shooting the bird with eggs to open pipes or spawning collision enemys 
+
+
+    
 
 }
