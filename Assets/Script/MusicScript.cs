@@ -16,6 +16,7 @@ public class MusicScript : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
        
     }
 
@@ -25,9 +26,9 @@ public class MusicScript : MonoBehaviour
 
     }
 
-    public void OnMouseDown()
+    private void OnMouseDown()
     {
-        Debug.Log("głośnik");
+ 
         if (audioSource.isPlaying)
         {
             audioSource.Pause();
