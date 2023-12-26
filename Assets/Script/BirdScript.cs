@@ -56,6 +56,18 @@ public class BirdScript : MonoBehaviour
         birdIsAlive = false;
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // collision of wall
+        if (collision.gameObject.layer == 6)
+        {
+
+            logic.GameOver();
+            birdIsAlive = false;
+        }
+
+    }
+
     private void moveWings()
     {
 

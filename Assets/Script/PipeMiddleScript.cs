@@ -19,6 +19,7 @@ public class PipeMiddleScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // middle pipe points
         if(collision.gameObject.layer == 3)
         {
 

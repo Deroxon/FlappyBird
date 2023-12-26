@@ -38,7 +38,7 @@ public class LogicScript : MonoBehaviour
 
 
 
-    // tasks: bird go off the screen game over || sound effect || spawn clouds || maybe bonus speed after come 10 points || high score || make menu || 2 game modes like shooting the bird with eggs to open pipes or spawning collision enemys 
+    // tasks:  || spawn clouds || maybe bonus speed after come 10 points || high score || make menu || 2 game modes like shooting the bird with eggs to open pipes or spawning collision enemys 
 
 
     
