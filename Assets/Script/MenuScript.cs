@@ -11,9 +11,6 @@ public class MenuScript : MonoBehaviour
     private GameObject SettingsUi;
     private GameObject Options;
 
-
-    public float volumeGlobal;
-
     public Slider volumeSlider;
     public AudioSource audioSource;
 
@@ -31,7 +28,7 @@ public class MenuScript : MonoBehaviour
         // gettings options 
         Options = GameObject.FindGameObjectWithTag("options");
 
-        
+        audioSource.volume = 0.2f;
 
         if (targetScene.isLoaded)
         {
@@ -75,7 +72,7 @@ public class MenuScript : MonoBehaviour
         audioSource.volume = volumeSlider.value;
 
         // in public to change in game
-        volumeGlobal = volumeSlider.value;
+        StaticNameController.globalVolume = volumeSlider.value;
     }
 
 }

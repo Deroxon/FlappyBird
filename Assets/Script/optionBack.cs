@@ -5,18 +5,8 @@ using static UnityEditor.Progress;
 
 public class optionBack : MonoBehaviour
 {
-    private GameObject SettingsUi;
-    private GameObject Options;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        SettingsUi = GameObject.FindGameObjectWithTag("settingsUi");
-
-        // gettings options 
-        Options = GameObject.FindGameObjectWithTag("options");
-
-    }
+    public GameObject SettingsUi;
+    public GameObject Options;
 
 
     public void back()
@@ -27,6 +17,6 @@ public class optionBack : MonoBehaviour
             SettingsUi.SetActive(false);
             Options.SetActive(true);
         }
-
+        Debug.Log(StaticNameController.globalVolume);
     }
 }

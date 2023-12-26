@@ -480,7 +480,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -855,6 +855,7 @@ MonoBehaviour:
   playerScore: 0
   scoreText: {fileID: 1830440428}
   gameOverScreen: {fileID: 1609222665}
+  audioSource: {fileID: 781821642}
 --- !u!1 &1263384631
 GameObject:
   m_ObjectHideFlags: 0
@@ -1386,10 +1387,10 @@ CanvasRenderer:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 519420032}
   - {fileID: 320590774}
   - {fileID: 1732826995}
   - {fileID: 405712073}
   - {fileID: 1525243941}
   - {fileID: 1124670615}
   - {fileID: 781821643}
+  - {fileID: 519420032}
