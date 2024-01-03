@@ -1297,6 +1297,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1749393510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1749393512}
+  - component: {fileID: 1749393513}
+  m_Layer: 0
+  m_Name: CloudSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1749393512
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749393510}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.96, y: 0.11, z: 2.6597369}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1749393513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749393510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f3faabd639399428d7fc40535decc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cloud: {fileID: 5983070894173915102, guid: 5eb7fed1f53446941bbefd9d6e5f07e0, type: 3}
+  totalTime: 0.7
+  currentTime: 1
+  heightOffSet: 5
 --- !u!1 &1815254674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1582,3 +1630,4 @@ SceneRoots:
   - {fileID: 781821643}
   - {fileID: 519420032}
   - {fileID: 1866111910}
+  - {fileID: 1749393512}
