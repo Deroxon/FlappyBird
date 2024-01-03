@@ -895,6 +895,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1124670615}
   - component: {fileID: 1124670616}
+  - component: {fileID: 1124670617}
   m_Layer: 0
   m_Name: LogicManager
   m_TagString: Logic
@@ -933,6 +934,18 @@ MonoBehaviour:
   scoreText: {fileID: 1830440428}
   gameOverScreen: {fileID: 1609222665}
   audioSource: {fileID: 781821642}
+--- !u!114 &1124670617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124670613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89645db15326a1245b0a840ceeb9e165, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1263384631
 GameObject:
   m_ObjectHideFlags: 0
@@ -1281,7 +1294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pipe: {fileID: 6606121835365410549, guid: 7f851e948c17de94c902cf7911018431, type: 3}
   spawnRate: 2
-  heightOffSet: 5
+  PipeheightOffSet: 10
 --- !u!4 &1732826995
 Transform:
   m_ObjectHideFlags: 0
@@ -1344,7 +1357,7 @@ MonoBehaviour:
   cloud: {fileID: 5983070894173915102, guid: 5eb7fed1f53446941bbefd9d6e5f07e0, type: 3}
   totalTime: 0.7
   currentTime: 1
-  heightOffSet: 5
+  CloudheightOffSet: 5
 --- !u!1 &1815254674
 GameObject:
   m_ObjectHideFlags: 0
