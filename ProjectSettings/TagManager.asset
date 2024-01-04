@@ -8,6 +8,7 @@ TagManager:
   - wings
   - settingsUi
   - options
+  - highScore
   layers:
   - Default
   - TransparentFX

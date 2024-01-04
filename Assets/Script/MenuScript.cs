@@ -13,6 +13,7 @@ public class MenuScript : MonoBehaviour
 
     public Slider volumeSlider;
     public AudioSource audioSource;
+    public HighScoreManager highScoreManager;
 
     private void Start()
     {
@@ -28,12 +29,16 @@ public class MenuScript : MonoBehaviour
         // gettings options 
         Options = GameObject.FindGameObjectWithTag("options");
 
-        audioSource.volume = 0.2f;
+
+        // setting slider and audioSource volume to setted global
+        audioSource.volume = StaticNameController.globalVolume;
+        volumeSlider.value = audioSource.volume;
 
         if (targetScene.isLoaded)
         {
             Debug.Log("Scene '" + sceneName + "' is already loaded.");
         }
+        highScoreManager.GetComponent<HighScoreManager>().loadHighScores();
     }
 
    

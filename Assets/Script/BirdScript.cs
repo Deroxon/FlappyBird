@@ -51,15 +51,19 @@ public class BirdScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("collision");
-        logic.GameOver();
-        birdIsAlive = false;
+        if(birdIsAlive)
+        {
+            Debug.Log("collision");
+            logic.GameOver();
+            birdIsAlive = false;
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         // collision of wall
-        if (collision.gameObject.layer == 6)
+        if (collision.gameObject.layer == 6 && birdIsAlive)
         {
 
             logic.GameOver();

@@ -9,13 +9,21 @@ public class LogicScript : MonoBehaviour
 
     public int playerScore;
     public Text scoreText;
+    private Text highScoreText;
     public GameObject gameOverScreen;
     public AudioSource audioSource;
+    private HighScoreManager highScoreManager;
 
     public void Start()
     {
         audioSource.volume = StaticNameController.globalVolume;
+        highScoreManager = GetComponent<HighScoreManager>();
+
+        highScoreText = GameObject.FindGameObjectWithTag("highScore").GetComponent<Text>();
+        highScoreText.text = "Highscore: " + StaticNameController.highscore;
     }
+
+
 
 
     [ContextMenu("increase score")]
@@ -29,9 +37,15 @@ public class LogicScript : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
+    public void backMainMenu()
+    {
+        SceneManager.LoadScene("MenuScene");
+    }
 
     public void GameOver()
     {
+        Debug.Log("gameover");
+        highScoreManager.addHighScore(playerScore);
         gameOverScreen.SetActive(true);
     }
 
